@@ -1,0 +1,19 @@
+@media (width < 768px) {
+    nav {
+        display: none;
+    }
+    .container {
+        text-align: center; 
+        flex-direction: column-reverse;
+    }
+    .buttons {
+        margin: auto;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .home-image {
+        order: 1;
+        flex: 1;
+    }
+}

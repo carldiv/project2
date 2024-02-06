@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+    --bg: #fff;
+    --primary: #219ebc;
+    --secondary: #1d3557;
+    --text: #caf0f8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.main {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: var(--bg);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 5% 0px 5%;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: default;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary);
+}
+ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+ul a {
+    font-size: 1.6rem;
+    color: var(--secondary);
+    font-weight: 700;
+    text-decoration-line: underline ;
+    text-decoration-color: transparent ;
+    transition: .4s;
+}
+
+ul a:hover {
+    color: #80b918;
+    text-decoration: underline;
+    text-decoration-color: green ;
+    text-underline-offset: 1rem;
+    transform: scale(1.2);
+}
+
+ul .active {
+     color: #80b918;
+}
+
+.home {
+    background-color: var(--bg);
+}
+
+.container {
+    min-height: 100vh;
+    margin: auto;
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content {
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-img {
+
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.home-img img {
+    background-color: #80b918;
+    border: 3px solid green;
+    border-radius: 50%;
+    cursor: pointer;
+    width: min(25rem, 90%);
+    max-width: 500px;
+}
+.home-img img:hover {
+    transition: 3s;
+    transform: scale(1.1) rotate(360deg);
+}
+.sub {
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.title {
+    margin-bottom: 1rem;
+    line-height: 3rem;
+    color: black;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.title span {
+    position: relative;
+    color: green;
+}
+.title span:after {
+    content: " |";
+    position: absolute;
+    right: 0;
+    color: green;
+    background-color: white;
+    width: 100%;
+    animation: typing 3s infinite alternate, line 1s infinite;
+}
+
+@keyframes typing {
+    to {
+        width: 0%;
+    }
+}
+@keyframes line {
+    50% {
+        color: transparent;
+    }
+}
+
+.description {
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+    font-size: 2rem;
+    color: green;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+button {
+    margin-top: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid black;
+    padding: 9px 34px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: green;
+}
+
+button:nth-child(2) {
+    background: transparent;
+    color: black;
+}
+button:hover {
+    transition: 2s;
+    transform: scale(1.2) rotate(360deg);
+    background-color: green;
+}
+.btn1:hover {
+    background: transparent;
+}
+
+/* .move {
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+    border-right: 5px solid;
+    animation: 
+    typing 2s steps(18),
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes typing {
+    50% { border-color: transparent;}
+}
+@keyframes typing {
+    from {width: 0}
+} */
